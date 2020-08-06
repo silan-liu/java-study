@@ -1,3 +1,4 @@
+import supermarket.Category;
 import supermarket.Phone;
 
 import java.lang.reflect.Field;
@@ -38,8 +39,12 @@ public class Main {
 
         // 静态方法反射
         Method countMethod = clazz.getMethod("getCount");
-        int res = (int)countMethod.invoke(null);
+        int res = (int) countMethod.invoke(null);
         System.out.println(res);
         System.out.println(Phone.getCount());
+
+        Category type = Category.RED;
+        System.out.println(type);
+        System.out.println(Category.values());
     }
 }
