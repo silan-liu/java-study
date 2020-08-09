@@ -11,6 +11,8 @@ public class Main {
         Phone phone = new Phone("iphone 7", "iOS", "iPhone", 400);
 
         System.out.println(phone.describe());
+        System.out.println(phone.isHot());
+        System.out.println(phone.getPhoneDesc());
 
         // 反射
         Class clazz = phone.getClass();

@@ -1,7 +1,15 @@
 package supermarket;
 
-public class Phone {
+import java.util.Date;
+
+public class Phone extends AbstractPhone {
     private double screenSize;
+
+    @Override
+    protected void test() {
+        System.out.println("phone test");
+    }
+
     private String name;
     private String os;
     public String brand;
