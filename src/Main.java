@@ -14,6 +14,14 @@ public class Main {
         System.out.println(phone.isHot());
         System.out.println(phone.getPhoneDesc());
 
+        // 静态内部类
+        Phone.CPU cpu = new Phone.CPU();
+        System.out.println(cpu.getCPUDesc());
+
+        // 成员内部类
+        Phone.WIFI wifi = phone.new WIFI();
+        System.out.println(wifi.getWifiDesc());
+
         // 反射
         Class clazz = phone.getClass();
 
